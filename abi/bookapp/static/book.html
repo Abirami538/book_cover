@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Book Cover</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            width: 210mm;
-            height: 297mm;
+            width: 100vw;
+            height: 100vh;
             font-family: "Times New Roman", serif;
             background-color: black;
             color: rgb(19, 9, 9);
@@ -19,9 +19,8 @@
         }
 
         .cover-container {
-            position: relative;
             width: 50%;
-            height: 45%;
+            height: 100%;
             background: url('background.jpg') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
@@ -86,10 +85,7 @@
             height: 120px;
             border-radius: 10%;
             border: 2px solid white;
-        }
-
-        .publisher-logo {
-            max-width: 100px;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -106,7 +102,7 @@
                 <div class="author">ABIRAMI A</div>
             </div>
             <div>
-                <img src="me.jpg" alt="Author Photo" class="author-photo" align = "centre">
+                <img src="me.jpg" alt="Author Photo" class="author-photo" />
             </div>
         </div>
     </div>
